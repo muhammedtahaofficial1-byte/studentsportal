@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portal</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fc;
+    }
+
+    header{
+      background:#2c3e50;
+      color:white;
+      padding:15px 30px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:bold;
+    }
+
+    .hero{
+      text-align:center;
+      padding:60px 20px;
+      background:#3498db;
+      color:white;
+    }
+
+    .hero h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .container{
+      width:90%;
+      margin:30px auto;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h2{
+      color:#2c3e50;
+      margin-bottom:15px;
+    }
+
+    .card p{
+      color:#555;
+      margin-bottom:15px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 15px;
+      background:#3498db;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+    }
+
+    footer{
+      text-align:center;
+      background:#2c3e50;
+      color:white;
+      padding:15px;
+      margin-top:30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Student Portal</h2>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Results</a>
+      <a href="#">Profile</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Student Portal</h1>
+    <p>Manage your courses, results, and profile easily.</p>
+  </section>
+
+  <section class="container">
+
+    <div class="card">
+      <h2>My Courses</h2>
+      <p>View all enrolled courses and study material.</p>
+      <a href="#" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>Results</h2>
+      <p>Check your exam results and academic progress.</p>
+      <a href="#" class="btn">View Results</a>
+    </div>
+
+    <div class="card">
+      <h2>Attendance</h2>
+      <p>Track your attendance record for all subjects.</p>
+      <a href="#" class="btn">Check Attendance</a>
+    </div>
+
+    <div class="card">
+      <h2>Profile</h2>
+      <p>Update personal information and account settings.</p>
+      <a href="#" class="btn">Edit Profile</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Student Portal | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
